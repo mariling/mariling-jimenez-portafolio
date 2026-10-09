@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales del portafolio */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  background: #0a0e17;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 95% 5%, rgb(139 68 247 / 8%), transparent 35%),
+    radial-gradient(ellipse at 0% 75%, rgb(30 213 255 / 5%), transparent 30%),
+    #0a0e17;
+  color: #f4f6fb;
+  font-family: 'Inter', sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
