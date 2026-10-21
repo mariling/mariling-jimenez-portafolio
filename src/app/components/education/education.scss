@@ -1,0 +1,34 @@
+/* Educación y formación */
+.timeline {
+  display: grid;
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.timeline-icon {
+  display: grid;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid #29364a;
+  border-radius: 16px;
+  background: #151d2c;
+  font-size: 1.5rem;
+}
+
+.timeline-place {
+  margin: 0 0 12px;
+  color: #1ed5ff;
+  line-height: 1.7;
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .timeline-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+  }
+}

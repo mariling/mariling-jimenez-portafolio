@@ -1,0 +1,35 @@
+/* Contacto */
+.contact-section {
+  margin: 0 24px 100px;
+  padding: 70px 32px;
+  border: 1px solid #1f2b3d;
+  border-radius: 28px;
+  background: radial-gradient(ellipse at 90% 0%, rgb(139 68 247 / 12%), transparent 55%), #0f1623;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin: 20px 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.18;
+  letter-spacing: -0.045em;
+  overflow-wrap: break-word;
+}
+
+.contact-section>p:not(.section-label) {
+  color: #98a5ba;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.contact-section .hero-actions {
+  justify-content: center;
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .contact-section {
+    margin-inline: 0;
+    padding: 48px 20px;
+  }
+}

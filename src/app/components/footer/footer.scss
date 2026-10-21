@@ -1,0 +1,27 @@
+/* Pie de página */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 0 38px;
+  border-top: 1px solid #1f2b3d;
+}
+
+.footer p {
+  color: #78869d;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer p {
+    text-align: left;
+  }
+}

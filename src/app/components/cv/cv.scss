@@ -1,0 +1,31 @@
+/* Currículum */
+.cv-card {
+  margin-top: 36px;
+}
+
+.cv-icon {
+  display: grid;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid #29364a;
+  border-radius: 16px;
+  background: #151d2c;
+  font-size: 1.5rem;
+}
+
+.cv-note {
+  color: #a56aff !important;
+  font-size: 0.85rem !important;
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .cv-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+  }
+}

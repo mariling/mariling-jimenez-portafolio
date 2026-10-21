@@ -1,0 +1,26 @@
+/* Experiencia */
+.experience-card {
+  margin-top: 36px;
+}
+
+.experience-icon {
+  display: grid;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid #29364a;
+  border-radius: 16px;
+  background: #151d2c;
+  font-size: 1.5rem;
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .experience-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+  }
+}

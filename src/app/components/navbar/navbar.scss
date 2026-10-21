@@ -1,0 +1,170 @@
+/* Barra de navegación */
+.navbar {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 68px;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 1px solid #1f2b3d;
+  border-radius: 999px;
+  background: rgb(15 22 35 / 92%);
+  backdrop-filter: blur(18px);
+}
+
+/* Marca */
+.brand {
+  color: #f4f6fb;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Enlaces */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #a8b3c7;
+  font-size: 0.88rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 180ms ease;
+}
+
+.nav-links a:hover {
+  color: #1ed5ff;
+}
+
+/* Acciones de navegación */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Botón de GitHub */
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid #26374c;
+  border-radius: 999px;
+  background: #151d2c;
+  color: #f4f6fb;
+  font-size: 0.88rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.github-button:hover {
+  border-color: #1ed5ff;
+  color: #1ed5ff;
+}
+
+/* Selector de idioma */
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid #26374c;
+  border-radius: 999px;
+  background: #101827;
+}
+
+.language-selector button {
+  min-width: 34px;
+  min-height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #a8b3c7;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.language-selector button:hover,
+.language-selector button:focus-visible,
+.language-selector button[aria-pressed="true"] {
+  background: rgb(30 213 255 / 10%);
+  color: #1ed5ff;
+}
+
+.language-selector button:focus-visible {
+  outline: 2px solid #1ed5ff;
+  outline-offset: 2px;
+}
+
+/* Pantallas medianas */
+@media (max-width: 1200px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    padding-inline: 18px;
+    border-radius: 28px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .navbar {
+    top: 8px;
+    min-height: 60px;
+    margin-top: 8px;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .language-selector button {
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .github-button {
+    min-height: 36px;
+    padding-inline: 13px;
+    font-size: 0.8rem;
+  }
+}

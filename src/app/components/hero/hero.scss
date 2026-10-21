@@ -1,0 +1,246 @@
+/* Presentación principal */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 60px;
+  min-height: 620px;
+  padding: 76px 24px 100px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  margin: 22px 0;
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.065em;
+  overflow-wrap: break-word;
+}
+
+.hero-description {
+  max-width: 560px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.button-primary {
+  border: 1px solid #1ed5ff;
+  background: #1ed5ff;
+  color: #07111c;
+}
+
+.button-secondary {
+  border: 1px solid #29364a;
+  background: #151d2c;
+  color: #f4f6fb;
+}
+
+.hero-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  color: #8e9ab0;
+  font-size: 0.83rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1ed5ff;
+  box-shadow: 0 0 14px rgb(30 213 255 / 65%);
+}
+
+/* Robot MIIOOK */
+.robot-area {
+  position: relative;
+  display: grid;
+  min-height: 390px;
+  place-items: center;
+}
+
+.robot-glow {
+  position: absolute;
+  width: min(330px, 85%);
+  aspect-ratio: 1;
+  border: 1px solid rgb(139 68 247 / 30%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(139 68 247 / 16%), transparent 70%);
+  box-shadow: 0 0 80px rgb(139 68 247 / 10%);
+}
+
+.robot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: robot-float 4s ease-in-out infinite;
+}
+
+.robot-antenna {
+  width: 4px;
+  height: 28px;
+  border-radius: 4px;
+  background: #1ed5ff;
+}
+
+.robot-head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  width: 218px;
+  height: 160px;
+  border: 2px solid #304258;
+  border-radius: 54px;
+  background: linear-gradient(145deg, #182438, #0d1421);
+  box-shadow: 0 20px 65px rgb(0 0 0 / 25%), inset 0 0 24px rgb(30 213 255 / 4%);
+}
+
+.robot-eye {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1ed5ff;
+  box-shadow: 0 0 22px rgb(30 213 255 / 65%);
+  animation: robot-blink 5s infinite;
+}
+
+.robot-mouth {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  width: 38px;
+  height: 12px;
+  border-bottom: 4px solid #a56aff;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%);
+}
+
+.robot-body {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 142px;
+  height: 76px;
+  margin-top: 12px;
+  padding-top: 18px;
+  border: 1.5px solid #1ed5ff;
+  border-radius: 24px;
+  background: #101b2a;
+}
+
+.robot-body-light {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1ed5ff;
+  box-shadow: 0 0 10px rgb(30 213 255 / 50%);
+}
+
+.robot-body-light:nth-child(2) {
+  background: #a56aff;
+}
+
+.robot-name {
+  margin-top: 18px;
+  color: #a56aff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+}
+
+.floating-tag {
+  position: absolute;
+  padding: 11px 15px;
+  border: 1px solid #29364a;
+  border-radius: 14px;
+  background: #101827;
+  color: #c8d3e4;
+  font-size: 0.8rem;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 15%);
+}
+
+.tag-one {
+  top: 20%;
+  right: 0;
+}
+
+.tag-two {
+  bottom: 110px;
+  left: 0;
+  top: auto;
+  color: #1ed5ff;
+}
+
+/* Animaciones */
+@keyframes robot-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes robot-blink {
+
+  0%,
+  44%,
+  48%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  46% {
+    transform: scaleY(0.12);
+  }
+}
+
+/* Tabletas */
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+    padding-inline: 0;
+  }
+
+  .robot-head {
+    width: 180px;
+    height: 140px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 72px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 12vw, 4.5rem);
+  }
+
+  .hero-description {
+    overflow-wrap: break-word;
+  }
+
+  .robot-area {
+    min-height: 340px;
+  }
+}

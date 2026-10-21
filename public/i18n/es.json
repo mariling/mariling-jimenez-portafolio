@@ -1,0 +1,95 @@
+{
+  "NAVBAR": {
+    "ABOUT": "Sobre mí",
+    "SKILLS": "Habilidades",
+    "EDUCATION": "Educación",
+    "LANGUAGES": "Idiomas",
+    "EXPERIENCE": "Experiencia",
+    "PROJECTS": "Proyectos",
+    "CV": "Currículum",
+    "CONTACT": "Contacto",
+    "GITHUB": "Ver GitHub"
+  },
+  "HERO": {
+    "GREETING": "¡HOLA, SOY MARILING!",
+    "TITLE_LINE_1": "Desarrolladora",
+    "TITLE_LINE_2": "de",
+    "TITLE_HIGHLIGHT": "software",
+    "DESCRIPTION": "Transformo ideas en soluciones de software, con especial interés en el desarrollo backend y en la lógica que hace funcionar cada aplicación.",
+    "BUTTON_PROJECTS": "Ver proyectos",
+    "BUTTON_CV": "Ver currículum",
+    "ROBOT": "System.out.println(\"¡Soy Miiook!\");",
+    "BUTTON_CONTACT": "Contactarme",
+    "NOTE": "En constante aprendizaje y desarrollo",
+    "ROBOT_TAG": "✦ Creatividad"
+  },
+  "ABOUT": {
+    "LABEL": "SOBRE MÍ",
+    "TITLE": "Construyendo mi camino en el desarrollo de software",
+    "DESCRIPTION": "Soy estudiante de Técnico en Desarrollo de Software en el ITSE. Me interesa comprender cómo funcionan los sistemas, diseñar soluciones bien estructuradas y fortalecer mis habilidades de programación mediante proyectos prácticos."
+  },
+  "SKILLS": {
+    "LABEL": "HABILIDADES",
+    "TITLE": "Tecnologías y herramientas",
+    "DESCRIPTION": "Herramientas que utilizo y conocimientos que continúo desarrollando."
+  },
+  "EDUCATION": {
+    "LABEL": "EDUCACIÓN",
+    "TITLE": "Formación académica",
+    "ITSE_TITLE": "Técnico en Desarrollo de Software",
+    "ITSE_PLACE": "Instituto Técnico Superior Especializado (ITSE)",
+    "ITSE_STATUS": "En curso",
+    "SCHOOL_TITLE": "Bachiller en Ciencias",
+    "SCHOOL_PLACE": "Instituto América",
+    "SCHOOL_STATUS": "Completado"
+  },
+  "LANGUAGES": {
+    "LABEL": "IDIOMAS",
+    "TITLE": "Comunicación sin fronteras",
+    "SPANISH": "Español",
+    "SPANISH_LEVEL": "Nativo",
+    "PORTUGUESE": "Portugués",
+    "PORTUGUESE_LEVEL": "Fluido",
+    "ENGLISH": "Inglés",
+    "ENGLISH_LEVEL": "Intermedio"
+  },
+  "EXPERIENCE": {
+    "LABEL": "EXPERIENCIA Y DESARROLLO",
+    "TITLE": "Aprendizaje aplicado",
+    "DESCRIPTION": "Experiencias académicas y proyectos que contribuyen a mi formación profesional."
+  },
+  "PROJECTS": {
+    "LABEL": "PROYECTOS",
+    "TITLE": "Proyectos destacados",
+    "DESCRIPTION": "Una selección de proyectos académicos y personales.",
+    "PORTFOLIO_TITLE": "Portafolio personal",
+    "VERTEX_TITLE": "Vertex Cargo International",
+    "BUTTON_GITHUB": "Ver repositorio",
+    "BUTTON_DETAILS": "Ver detalles"
+  },
+  "CV": {
+    "LABEL": "CURRÍCULUM",
+    "TITLE": "Conoce más sobre mi perfil",
+    "DESCRIPTION": "Consulta mi currículum para conocer mi formación, experiencia y habilidades.",
+    "BUTTON": "Ver currículum en PDF",
+    "NOTE": "Documento en formato PDF."
+  },
+  "CONTACT": {
+    "LABEL": "CONTACTO",
+    "TITLE": "Hablemos de tu próximo proyecto",
+    "DESCRIPTION": "Estoy abierta a oportunidades de empleo, prácticas profesionales y proyectos freelance.",
+    "NAME": "Nombre",
+    "EMAIL": "Correo electrónico",
+    "MESSAGE": "Mensaje",
+    "BUTTON": "Enviar mensaje"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2026 Mariling Jiménez. Todos los derechos reservados."
+  },
+  "LANGUAGE_SELECTOR": {
+    "LABEL": "Idioma",
+    "SPANISH": "Español",
+    "ENGLISH": "Inglés",
+    "PORTUGUESE": "Portugués"
+  }
+}

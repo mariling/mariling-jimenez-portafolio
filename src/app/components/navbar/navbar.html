@@ -1,0 +1,37 @@
+<nav class="navbar">
+  <a class="brand" href="#inicio">Mariling Jimenez<span></span></a>
+
+  <div class="nav-links">
+    <a href="#sobre-mi">{{ 'NAVBAR.ABOUT' | translate }}</a>
+    <a href="#habilidades">{{ 'NAVBAR.SKILLS' | translate }}</a>
+    <a href="#educacion">{{ 'NAVBAR.EDUCATION' | translate }}</a>
+    <a href="#idiomas">{{ 'NAVBAR.LANGUAGES' | translate }}</a>
+    <a href="#experiencia">{{ 'NAVBAR.EXPERIENCE' | translate }}</a>
+    <a href="#proyectos">{{ 'NAVBAR.PROJECTS' | translate }}</a>
+    <a href="#cv">{{ 'NAVBAR.CV' | translate }}</a>
+    <a href="#contacto">{{ 'NAVBAR.CONTACT' | translate }}</a>
+  </div>
+
+  <div class="navbar-actions">
+    <div class="language-selector" [attr.aria-label]="'LANGUAGE_SELECTOR.LABEL' | translate">
+      <button type="button" (click)="changeLanguage('es')" [attr.aria-pressed]="translate.currentLang() === 'es'"
+        aria-label="Español">
+        ES
+      </button>
+
+      <button type="button" (click)="changeLanguage('en')" [attr.aria-pressed]="translate.currentLang() === 'en'"
+        aria-label="English">
+        EN
+      </button>
+
+      <button type="button" (click)="changeLanguage('pt')" [attr.aria-pressed]="translate.currentLang() === 'pt'"
+        aria-label="Português">
+        PT
+      </button>
+    </div>
+
+    <a class="github-button" href="https://github.com/mariling" target="_blank" rel="noopener noreferrer">
+      {{ 'NAVBAR.GITHUB' | translate }} ↗
+    </a>
+  </div>
+</nav>

@@ -1,0 +1,70 @@
+/* Secciones y habilidades */
+.content-section {
+  margin-bottom: 150px;
+  padding-inline: 24px;
+}
+
+.section-description {
+  margin-top: -4px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.skill-card {
+  min-height: 150px;
+  padding: 26px;
+  border: 1px solid #1f2b3d;
+  border-radius: 20px;
+  background: #0f1623;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: #1ed5ff;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+}
+
+.skill-card h3 {
+  margin: 20px 0 6px;
+  font-size: 1rem;
+}
+
+.skill-card p {
+  margin: 0;
+  color: #8e9ab0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* Tabletas */
+@media (max-width: 850px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Móviles */
+@media (max-width: 620px) {
+  .content-section {
+    margin-bottom: 100px;
+    padding-inline: 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .skill-card {
+    min-height: 120px;
+  }
+}

@@ -1,59 +1,56 @@
-# MarilingJimenezPortafolio
+# Mariling Jiménez | Portafolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.2.
+Portafolio personal de Mariling Jiménez, estudiante de Técnico en Desarrollo de Software en el Instituto Técnico Superior Especializado (ITSE), con interés en el desarrollo backend.
 
-## Development server
+## Enlaces
 
-To start a local development server, run:
+- **Portafolio web:** https://mariling-jimenez-portafolio.web.app
+- **Código fuente:** https://github.com/mariling/mariling-jimenez-portafolio
+- **Currículum:** https://mariling-jimenez-portafolio.web.app/documentos/CV-Mariling-Jimenez.pdf
 
-```bash
-ng serve
-```
+## Tecnologías
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 22
+- TypeScript
+- HTML y SCSS
+- Firebase Hosting
+- ngx-translate
 
-## Code scaffolding
+## Características
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Diseño adaptable a diferentes dispositivos.
+- Contenido en español, inglés y portugués.
+- Secciones de presentación, habilidades, formación, idiomas y proyectos.
+- Acceso al currículum en PDF.
+- Publicación mediante Firebase Hosting.
 
-```bash
-ng generate component component-name
-```
+## Ejecutar localmente
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Requisitos: Node.js y npm.
 
-```bash
-ng generate --help
-```
+Clona el repositorio e instala las dependencias:
 
-## Building
+    git clone https://github.com/mariling/mariling-jimenez-portafolio.git
+    cd mariling-jimenez-portafolio
+    npm install
 
-To build the project run:
+Inicia el servidor de desarrollo:
 
-```bash
-ng build
-```
+    ng serve
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Abre http://localhost:4200/ en tu navegador.
 
-## Running unit tests
+## Compilar y publicar
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Para generar la compilación:
 
-```bash
-ng test
-```
+    ng build
 
-## Running end-to-end tests
+Para publicar una nueva versión en Firebase Hosting:
 
-For end-to-end (e2e) testing, run:
+    firebase deploy --only hosting
 
-```bash
-ng e2e
-```
+## Autora
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Mariling Jiménez**
+Técnico en Desarrollo de Software en curso — ITSE.
